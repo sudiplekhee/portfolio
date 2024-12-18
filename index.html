@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.89;
+            color:blue;
+           
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1, h2 {
+            font-family: 'Verdana', sans-serif;
+            color:blue;
+        }
+
+       
+        .navbar {
+            background-color: blue;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffd700;
+        }
+        .red{
+            color: red;
+        }
+        .home {
+            padding: 60px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .home h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color:blue;
+        }
+
+        .home p {
+            font-size: 18px;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 80px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .about-text {
+            max-width: 500px;
+        }
+
+        .about-text h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+        }
+
+        .about-photos img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .services {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .services h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .service {
+            display: inline-block;
+            width: 280px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e6e6ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .service h2 {
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+
+        .service p {
+            font-size: 20px;
+        }
+        .skills {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .skills h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+        }
+
+        .skills li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .contact h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact button:hover {
+            background-color: #575757;
+        }
+        .contact {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .contact-info {
+            max-width: 400px;
+        }
+
+        .contact-info h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+      
+   
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Services">Services</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <div class="home" id="Home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+            Hello, I am Sudip Chaudhary, a passionate frontend developer and graphic designer. I create engaging websites and beautiful designs that help brands stand out.
+        </p>
+    </div>
+
+    <div class="about" id="About">
+        <div class="about-text">
+            <h1>About <span class="red">Me</span></h1>
+            <p>
+                My name is Sudip Chaudhary. I am a frontend developer and graphics designer.  
+                I specialize in building user-friendly, visually appealing websites and creating stunning designs that communicate effectively.  
+                My goal is to bring creative ideas to life and provide seamless digital experiences.
+            </p>
+        </div>
+        <div class="about-photos">
+            <img src="photo1.jpg" alt="Photo 1">
+        </div>
+    </div>
+
+    <div class="services" id="Services">
+        <h1>My Services</h1>
+        <div class="service">
+            <h2>Web Development</h2>
+            <p>Building responsive, user-friendly websites to help your business grow online.</p>
+        </div>
+        <div class="service">
+            <h2>Graphics Design</h2>
+            <p>Creating visually appealing graphics, logos, and branding materials.</p>
+        </div>
+        <div class="service">
+            <h2>Video Editing</h2>
+            <p>Editing and creating professional videos for various purposes.</p>
+        </div>
+    </div>
+
+    <div class="skills" id="Skills">
+        <h1>My Skills</h1>
+        <ul>
+            <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React</li>
+            <li><strong>Backend Development:</strong> PHP, MySQL, Node.js</li>
+            <li><strong>Graphic Design:</strong> Adobe Photoshop, Lightroom, Figma, Logo Design</li>
+            <li><strong>Video Editing:</strong> Adobe Premiere Pro, Adobe After Effects, Capcut</li>
+        </ul>
+    </div>
+    <div class="contact" id="Contact">
+        <div class="contact-info">
+            <h1>Contact Information</h1>
+            <p><strong>Name:</strong> Sudip Chaudhary</p>
+            <p><strong>Phone:</strong> +977-9800976376 </p>
+            <p><strong>Email:</strong> sudipchaudhary574@gmail.com</p>
+            <p><strong>Location:</strong> Itahari-16, Nepal</p>
+        </div>
+        <form>
+            <h1>Send a Message</h1>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
